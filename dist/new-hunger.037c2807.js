@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({11:[function(require,module,exports) {
+})({34:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -133,7 +133,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],10:[function(require,module,exports) {
+},{}],29:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -164,28 +164,38 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":11}],15:[function(require,module,exports) {
+},{"./bundle-url":34}],28:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":10}],13:[function(require,module,exports) {
+},{"_css_loader":29}],25:[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":10}],18:[function(require,module,exports) {
+},{"_css_loader":29}],38:[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":10}],9:[function(require,module,exports) {
+},{"_css_loader":29}],18:[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"normalize.css":15,"./css/reset.css":13,"./css/service.scss":18,"_css_loader":10}],9:[function(require,module,exports) {
+},{"_css_loader":29}],39:[function(require,module,exports) {
+
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":29}],2:[function(require,module,exports) {
+
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"normalize.css":28,"./css/reset.css":25,"./css/common.scss":38,"./css/service.scss":18,"./css/curriculum.scss":39,"_css_loader":29}],36:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -214,7 +224,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '53145' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55643' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -355,4 +365,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[9], null)
+},{}]},{},[36], null)
