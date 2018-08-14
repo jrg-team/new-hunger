@@ -1,0 +1,8 @@
+{
+  "name": "new-hunger",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:jrg-team/new-hunger.git",
+  "author": "Zegendary <zxw1992513@qq.com>",
+  "license": "MIT"
+}
