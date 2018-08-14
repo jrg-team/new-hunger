@@ -190,12 +190,17 @@ module.hot.accept(reloadCSS);
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
+},{"_css_loader":29}],41:[function(require,module,exports) {
+
+var reloadCSS = require('_css_loader');
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
 },{"_css_loader":29}],2:[function(require,module,exports) {
 
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"normalize.css":28,"./css/reset.css":25,"./css/common.scss":38,"./css/service.scss":18,"./css/curriculum.scss":39,"_css_loader":29}],36:[function(require,module,exports) {
+},{"normalize.css":28,"./css/reset.css":25,"./css/common.scss":38,"./css/service.scss":18,"./css/curriculum.scss":39,"./css/teacher.scss":41,"_css_loader":29}],36:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
