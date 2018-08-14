@@ -1,10 +1,83 @@
 section.curriculum-wrapper{
   background:linear-gradient(90deg, #f9fcff 0%, #ebf7ff 100%);
+  li{
+    .title{
+      display: flex;
+      border-radius: 15px;
+      box-shadow:0 0 6px 0 rgba(0,159,245,0.15);
+      height: 100px;overflow: hidden;
+      .icon{
+        width: 100px;height: 100px;cursor: pointer;
+        display: flex;justify-content: center;align-items: center;
+        background:linear-gradient(43deg, #23d5f1 0%, #009df5 100%);
+        span{
+          width: 19px;
+          height: 19px;
+          display: inline-block;
+          position: relative;
+          transition: .3s;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background: #fff;
+            left: 9px;
+          }
+          &:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            left: 0;
+            top: 9px;
+          }
+        }
+      }
+      .description{
+        padding-left: 30px;
+        background: #fff;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p.name{
+          font-size:18px;
+          color:#1d2b60;
+          font-weight: 700;
+          margin-bottom: 15px;
+          line-height: 1.2;
+        }
+        p:last-child{
+          font-size:14px;
+          color:#606e7d;
+        }
+      }
+    }
+    &:hover .icon{
+      background-image:linear-gradient(44deg, #5a70af 0%, #1e2c61 100%)
+    }
+  }
+  p.footer{
+    text-align: center;
+    font-size:14px;
+    color:#009ff5;
+  }
 }
 @media (min-width: 500px){
-
+  section.curriculum-wrapper{
+    h1{margin-bottom: 20px;}
+    .content{
+      display: flex;
+      justify-content: space-between;
+      ul{width: calc(100%/2 - 20px)}
+    }
+  }
 }
 
 @media (max-width: 499px){
+  section.curriculum-wrapper{
 
+  }
 }
