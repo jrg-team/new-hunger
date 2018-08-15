@@ -6,6 +6,7 @@
   "author": "Zegendary <zxw1992513@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
     "parcel": "^1.9.7"
   },

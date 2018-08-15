@@ -357,6 +357,7 @@ input, button, select, textarea {font: inherit;}h1, h2, h3 {
   .section-wrapper {
     padding: 75px 0; }
     .section-wrapper > main {
+      width: 90%;
       max-width: 1200px;
       margin: 0 auto; } }
 
@@ -447,6 +448,118 @@ input, button, select, textarea {font: inherit;}h1, h2, h3 {
         margin-bottom: 18px; } }
 section.curriculum-wrapper {
   background: linear-gradient(90deg, #f9fcff 0%, #ebf7ff 100%); }
+  section.curriculum-wrapper li .title {
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 159, 245, 0.15);
+    overflow: hidden; }
+    section.curriculum-wrapper li .title .icon {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(43deg, #23d5f1 0%, #009df5 100%); }
+      section.curriculum-wrapper li .title .icon span {
+        width: 19px;
+        height: 19px;
+        display: inline-block;
+        position: relative;
+        transition: .3s; }
+        section.curriculum-wrapper li .title .icon span:before {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 100%;
+          background: #fff;
+          left: 9px; }
+        section.curriculum-wrapper li .title .icon span:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          background: #fff;
+          left: 0;
+          top: 9px; }
+    section.curriculum-wrapper li .title .description {
+      padding-left: 30px;
+      background: #fff;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      section.curriculum-wrapper li .title .description p.name {
+        font-size: 18px;
+        color: #1d2b60;
+        font-weight: 700;
+        margin-bottom: 15px;
+        line-height: 1.2; }
+      section.curriculum-wrapper li .title .description p:last-child {
+        font-size: 14px;
+        color: #606e7d; }
+  section.curriculum-wrapper li .drop-down {
+    overflow: hidden;
+    max-height: 0px;
+    transition: max-height .3s ease-out; }
+  section.curriculum-wrapper li.active .drop-down {
+    max-height: 500px;
+    transition: max-height 1s ease-in; }
+  section.curriculum-wrapper li .drop-down-content {
+    margin-left: 99px;
+    border-left: 2px solid #b8d7e9;
+    padding: 0.1px; }
+    section.curriculum-wrapper li .drop-down-content p {
+      font-size: 16px;
+      padding: 0 20px;
+      margin: 15px 0;
+      color: #606e7d;
+      position: relative; }
+      section.curriculum-wrapper li .drop-down-content p:before {
+        content: '';
+        position: absolute;
+        background: #b8d7e9;
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        left: -7px;
+        top: 4px; }
+  section.curriculum-wrapper li:hover .icon {
+    background-image: linear-gradient(44deg, #5a70af 0%, #1e2c61 100%); }
+  section.curriculum-wrapper li.active .icon {
+    background-image: linear-gradient(44deg, #5a70af 0%, #1e2c61 100%); }
+  section.curriculum-wrapper li.active .description {
+    background-image: linear-gradient(44deg, #1e2c61 0%, #5a70af 100%); }
+    section.curriculum-wrapper li.active .description p {
+      color: #FFFFFF !important; }
+  section.curriculum-wrapper p.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #009ff5; }
+
+@media (min-width: 500px) {
+  section.curriculum-wrapper h1 {
+    margin-bottom: 40px; }
+  section.curriculum-wrapper .content {
+    display: flex;
+    justify-content: space-between; }
+    section.curriculum-wrapper .content ul {
+      width: calc(100%/2 - 20px); }
+  section.curriculum-wrapper li .title {
+    height: 100px; }
+    section.curriculum-wrapper li .title .icon {
+      width: 100px;
+      height: 100px; } }
+
+@media (max-width: 499px) {
+  section.curriculum-wrapper h1 {
+    margin-bottom: 20px; }
+  section.curriculum-wrapper li {
+    margin-bottom: 20px; }
+    section.curriculum-wrapper li .title {
+      height: 80px; }
+      section.curriculum-wrapper li .title .icon {
+        width: 80px;
+        height: 80px; } }
 section.teachers-wrapper {
   background: linear-gradient(90deg, #ebf7ff 0%, #f9fcff 100%); }
   section.teachers-wrapper h1, section.teachers-wrapper h3 {
