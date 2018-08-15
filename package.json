@@ -12,7 +12,7 @@
   "gh-pages-deploy": {
     "staticpath": "dist",
     "prep": [
-      "parcel index.html",
+      "parcel index.html"
     ],
     "commit": "a custom commit message",
     "post": [
