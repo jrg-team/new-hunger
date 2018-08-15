@@ -1,3 +1,9 @@
+/* 动态rem */
+$designWidth: 640;
+@function px( $px ){
+  @return $px/$designWidth*10 + rem;
+}
+
 h1, h2, h3 {
   color: #2b4576;
   font-weight: bolder;
