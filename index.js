@@ -19,3 +19,6 @@ $('.curriculum-wrapper').on('click','li',function () {
   $(this).toggleClass('active')
 })
 
+$('.qanda-wrapper').on('click','li',function () {
+  $(this).toggleClass('active')
+})
