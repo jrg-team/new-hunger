@@ -1,0 +1,18 @@
+@import './common.scss';
+@mixin h1(){ font-family: $font-mingHeiMonoB; font-size: 36px; color: #2b4576;  font-weight: 500; }
+
+section.choose-wrapper { display: flex; @include linear-gradient-blue-to-white();
+  width: 100%; min-height: 763px; padding: 50px;
+  > .left { flex: 1;
+    > h1 { @include h1(); margin-bottom: 50px; }
+    > ul > li { margin-bottom: 20px; display: flex;
+      .icon-wrap { margin-right: 28px; position: relative;
+        > .icon { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); } }
+      .content {
+        p { font-family: $font-medium; font-size: 14px; color: $gray; }
+        h3 { font-family: $font-medium; font-size: 24px; color: #2b4576; margin-bottom: 20px;}
+      }
+    }
+  }
+  > .bg { flex: 1; position: relative; @include center-background();}
+}
