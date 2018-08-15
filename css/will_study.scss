@@ -1,0 +1,22 @@
+@import './common.scss';
+@mixin h1(){ font-family: $font-mingHeiMonoB; font-size: 36px; color: #2b4576;  font-weight: 500; }
+
+section.will-study { @include linear-gradient-blue-to-white();
+  h1 { @include h1(); text-align:center; margin-bottom: 50px; }
+  h2 { font-family: $font-medium; font-size:20px; color:#1d2b60; text-align:center; }
+}
+
+@media (max-width: 499px){
+  section.will-study  > .swiper-bg {
+    height: px(1300); width: px(1540); margin: auto; position: relative;
+    > img { width: 100%; }
+    .swiper-container { width: px(1420); height: px(804); overflow: hidden; position: absolute; left: px(60); top: px(64); }
+  }
+}
+@media (min-width: 500px) {
+  section.will-study  > .swiper-bg {
+    height: 650px; width: 770px; margin: auto; position: relative;
+    > img { width: 100%; }
+    .swiper-container { width: 710px; height: 402px; overflow: hidden; position: absolute; left: 30px; top: 34px; }
+  }
+}
