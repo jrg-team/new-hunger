@@ -5,12 +5,27 @@
   "repository": "git@github.com:jrg-team/new-hunger.git",
   "author": "Zegendary <zxw1992513@qq.com>",
   "license": "MIT",
+  "scripts": {
+    "deploy": "gh-pages-deploy -- 'A custom commit message'",
+    "build": "parcel build index.html --public-url ./",
+    "clean-source": "rimraf README.md src webroot package.json css images js dist index.css index.js"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "dist",
+    "prep": ["build"],
+    "commit": "a custom commit message",
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": true
+  },
   "dependencies": {
     "jquery": "^3.3.1",
     "normalize.css": "^8.0.0",
     "parcel": "^1.9.7"
   },
   "devDependencies": {
+    "gh-pages-deploy": "^0.5.0",
     "node-sass": "^4.9.3"
   }
 }
