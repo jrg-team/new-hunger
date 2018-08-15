@@ -12,8 +12,7 @@
   "gh-pages-deploy": {
     "staticpath": "dist",
     "prep": [
-      "build-sass",
-      "optimize-img"
+      "parcel index.html",
     ],
     "commit": "a custom commit message",
     "post": [
