@@ -6,7 +6,8 @@
   "author": "Zegendary <zxw1992513@qq.com>",
   "license": "MIT",
   "scripts": {
-    "deploy": "gh-pages-deploy -- 'A custom commit message'"
+    "deploy": "gh-pages-deploy -- 'A custom commit message'",
+    "clean-source": "rimraf README.md src webroot package.json css images js index.css index.html index.js"
   },
   "gh-pages-deploy": {
     "staticpath": "dist",
