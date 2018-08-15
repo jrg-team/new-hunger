@@ -7,13 +7,12 @@
   "license": "MIT",
   "scripts": {
     "deploy": "gh-pages-deploy -- 'A custom commit message'",
-    "start": "parcel index.html",
-    "build": "parcel build",
+    "build": "parcel build index.html",
     "clean-source": "rimraf README.md src webroot package.json css images js index.css index.html index.js"
   },
   "gh-pages-deploy": {
     "staticpath": "dist",
-    "prep": ["start", "build"],
+    "prep": ["build"],
     "commit": "a custom commit message",
     "post": [
       "clean-source"
