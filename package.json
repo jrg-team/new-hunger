@@ -11,6 +11,7 @@
     "parcel": "^1.9.7"
   },
   "devDependencies": {
+    "gh-pages-deploy": "^0.5.0",
     "node-sass": "^4.9.3"
   }
 }
