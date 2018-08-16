@@ -22,3 +22,7 @@ $('.curriculum-wrapper').on('click','li',function () {
 $('.qanda-wrapper').on('click','li',function () {
   $(this).toggleClass('active')
 })
+
+$('.connection-pc').on('click','li',function () {
+  $(this).toggleClass('active')
+})
