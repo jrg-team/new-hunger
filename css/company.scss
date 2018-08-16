@@ -1,0 +1,28 @@
+section.company-wrapper{
+  background:linear-gradient(90deg, #f9fcff 0%, #ebf7ff 100%);
+  h1{
+    text-align: center;
+    line-height: 1.5;margin-bottom: 20px;
+  }
+  ul{
+    li{
+      padding: 28px;
+      background:#ffffff;
+      box-shadow:0 0 20px 0 rgba(0,159,245,0.15);
+      border-radius:32px;
+      height:422px;
+      text-align: center;
+      img{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+      }
+      .name{
+        margin: 20px 0 10px 0;
+      }
+      h4,p{color:#606e7d;line-height: 1.8;}
+      h4{font-size: 14px;margin-bottom: 20px;}
+      p{font-size: 12px;text-align: left}
+    }
+  }
+}
