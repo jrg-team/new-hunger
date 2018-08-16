@@ -26,3 +26,7 @@ $('.qanda-wrapper').on('click','li',function () {
 $('.connection-pc').on('click','li',function () {
   $(this).toggleClass('active')
 })
+
+let wechat_qrs = $('.wechat_qr')
+let index = Math.floor(wechat_qrs.length * Math.random())
+wechat_qrs.eq(index).show()

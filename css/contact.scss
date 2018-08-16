@@ -49,8 +49,40 @@ section.contact-wrapper{
         img{
           width: 50px;
           height: 50px;
+          cursor: pointer;
         }
-        ul{position: relative;}
+        li{
+          position: relative;
+          .triangle,.box{display: none}
+        }
+        li.active{
+          .triangle,.box{display: block}
+        }
+        ul{
+          .triangle{
+            position: absolute;
+            top: 14px;
+            left: -16px;
+          }
+          .box{
+            position: absolute;
+            padding: 24px;
+            width: 280px;
+            top: 0;
+            left: -300px;
+            background:linear-gradient(0deg, #5a70af 0%, #1e2c61 100%);
+            box-shadow:0 22px 16px 0 rgba(43,61,118,0.50);
+            border-radius:32px;
+            p{
+              color: #FFFFFF;
+              line-height: 2;
+            }
+            img{width: 100%;height: auto;}
+            &.wechat-qr-wrapper{
+              img{display: none}
+            }
+          }
+        }
         position: absolute;
         top: -20px;
         right: 0;
