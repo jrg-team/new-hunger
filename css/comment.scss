@@ -1,0 +1,32 @@
+section.comment-wrapper{
+  background:linear-gradient(90deg, #ebf7ff 0%, #f9fcff 100%);
+  h1,h3{
+    text-align: center;
+    line-height: 1.5;margin-bottom: 20px;
+  }
+
+}
+
+@media (min-width: 500px){
+  section.comment-wrapper{
+    ul{
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      li{
+        width: calc(100%/3 - 20px);
+      }
+    }
+  }
+}
+
+@media (max-width: 499px){
+  section.comment-wrapper{
+    ul{
+      overflow-x: auto;
+      li{
+        width: 100%;
+      }
+    }
+  }
+}
