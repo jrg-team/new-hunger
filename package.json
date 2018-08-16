@@ -6,10 +6,10 @@
   "author": "Zegendary <zxw1992513@qq.com>",
   "license": "MIT",
   "scripts": {
+    "start": "parcel index.html java.html about.html",
     "deploy": "gh-pages-deploy -- 'A custom commit message'",
-    "build": "parcel build index.html --public-url ./",
+    "build": "parcel build index.html java.html about.html --public-url ./",
     "clean-source": "rimraf README.md src webroot package.json css images js dist index.css index.js",
-    "parcel": "node_modules/parcel/bin/cli.js"
   },
   "gh-pages-deploy": {
     "staticpath": "dist",
