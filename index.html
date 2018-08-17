@@ -16,17 +16,17 @@
       <header>
         <ul>
           <li><img src="./images/banner/logo.svg" alt="" class="logo"></li>
-          <li>前端</li>
+          <li class="active">前端</li>
           <li>java</li>
-          <li>关于鸡人谷</li>
+          <li>关于「饥人谷」</li>
         </ul>
         <div class="aside">
           <div class="loadMore">
-            <img src="./images/banner/more.svg" alt="">
+            <img src="./images/banner/more.svg" alt="" class="more-icon">
             <span class="load-wrap active">
-            <a href="#">回到旧版</a>
-            <a href="#">写代码啦</a>
-          </span>
+              <a href="#">回到旧版</a>
+              <a href="#">写代码啦</a>
+            </span>
           </div>
           <div class="call">
             <img src="./images/banner/call.svg" alt="">
@@ -43,12 +43,54 @@
         </div>
         <div class="description" id="book-details"
              style="position: relative; right: -1000px; opacity: 0;">
-
+          <ul style="opacity: 0;">
+            <li>
+              <img src="./images/banner/calendar.svg" alt="">
+              <div class="wrap">
+                <p class="title">开课时间</p>
+                <p>07.08开课，每周周二周四更新课程</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/banner/course-type.svg" alt="">
+              <div class="wrap">
+                <p class="title">课程形式</p>
+                <p>07.08开课，每周周二周四更新课程</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/banner/plan.svg" alt="">
+              <div class="wrap">
+                <p class="title">课程周期</p>
+                <p>07.08开课，每周周二周四更新课程</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/banner/teacher.svg" alt="">
+              <div class="wrap">
+                <p class="title">老师</p>
+                <p>07.08开课，每周周二周四更新课程</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/banner/course-leve.svg" alt="">
+              <div class="wrap">
+                <p class="title">课程等级</p>
+                <p>07.08开课，每周周二周四更新课程</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/banner/teacher.svg" alt="">
+              <div class="wrap">
+                <p class="title">开课时间</p>
+                <p>07.08开课，每周周二周四更新课程</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
-
   <section class="choose-wrapper section-wrapper">
     <div class="left">
       <h1>您为什么要成为前端工程师？</h1>
@@ -147,23 +189,15 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./images/will_study/swiper.png" alt="">
-            <span class="dot"></span>
-            <span class="dot-line"></span>
           </div>
           <div class="swiper-slide">
             <img src="./images/will_study/swiper.png" alt="">
-            <span class="dot"></span>
-            <span class="dot-line"></span>
           </div>
           <div class="swiper-slide">
             <img src="./images/will_study/swiper.png" alt="">
-            <span class="dot"></span>
-            <span class="dot-line"></span>
           </div>
           <div class="swiper-slide">
             <img src="./images/will_study/swiper.png" alt="">
-            <span class="dot"></span>
-            <span class="dot-line"></span>
           </div>
         </div>
       </div>
@@ -454,6 +488,97 @@
       </div>
     </main>
   </section>
+  <section class="qanda-wrapper section-wrapper">
+    <main class="q&a">
+      <h1>在你报名前 或许你应该先看看</h1>
+      <div class="content">
+        <ul>
+          <li>
+            <div class="title">
+              <div class="icon">
+                <span class="x"></span>
+              </div>
+              <p class="question">问题 老师好不好？讲课是否仔细</p>
+            </div>
+            <div class="drop-down">
+              <div class="drop-down-content">
+                回答 非常棒帮到家了，来听听听就知道了，我的输入法好卡啊？来听听听就知道了，我的输入法好卡啊？
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <div class="title">
+              <div class="icon">
+                <span class="x"></span>
+              </div>
+              <p class="question">问题 老师好不好？讲课是否仔细</p>
+            </div>
+            <div class="drop-down">
+              <div class="drop-down-content">
+                回答 非常棒帮到家了，来听听听就知道了，我的输入法好卡啊？来听听听就知道了，我的输入法好卡啊？
+              </div>
+            </div>
+          </li>
+          <div class="title">
+            <div class="icon">
+              <img src="./images/banner/teacher.svg" alt="">
+            </div>
+            <p>关于更多服务信息，点这里</p>
+          </div>
+        </ul>
+      </div>
+    </main>
+  </section>
+  <!-- 预约试听 -->
+  <section class="free_trial_request section-wrapper">
+    <h1>前端系统班预约试听</h1>
+    <div class="content-wrap">
+      <div class="from-wrap">
+        <h2>留下您的简单信息，免费试听</h2>
+        <div class="from">
+          <input type="text" placeholder="你的电话" class="phone">
+          <input type="text" placeholder="你的名字" class="userName">
+          <input type="text" placeholder="你的微信" class="wechat">
+        </div>
+        <div class="submit">
+          <span>提交</span>
+        </div>
+      </div>
+      <div class="details">
+        <ul>
+          <li>
+            <div class="icon">
+              <img src="./images/free_trial_request/refund.svg" alt="">
+            </div>
+            <div class="content-wrap">
+              <h3>退款保证</h3>
+              <p>如果在第一课后您认为此课程不适合您（例如，不适合复杂性），那么我们将退还这笔钱。</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./images/free_trial_request/refund.svg" alt="">
+            </div>
+            <div class="content-wrap">
+              <h3>分期付款</h3>
+              <p>你可以支付一次全部金额，但你可以分手两个月 - 如你所愿。</p>
+            </div>
+          </li>
+          <li>
+            <div class="icon">
+              <img src="./images/free_trial_request/refund.svg" alt="">
+            </div>
+            <div class="content-wrap">
+              <h3>分期付款</h3>
+              <p>你可以支付一次全部金额，但你可以分手两个月 - 如你所愿。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <!--倒数第二个模块-->
   <section class="qanda-wrapper section-wrapper">
     <main class="q&a">
@@ -616,6 +741,86 @@
         </ul>
         <footer>©2018 hunger valley（饥人谷）保留所有权利。</footer>
       </main>
+    </div>
+  </section>
+
+  <!--<section class="submit-success section-wrapper">-->
+    <!--<img src="./images/QR-code/code-bg.png" alt="">-->
+    <!--<div class="content-wrap">-->
+      <!--<h1>提交成功！</h1>-->
+      <!--<h2>去填写一份更详细的表单，方便我们为您提供定制化服务</h2>-->
+      <!--<h3>添加班主任微信，并关注我们的公众号</h3>-->
+      <!--<div class="QR-wrap">-->
+        <!--<div class="sister-code">-->
+          <!--<img src="./images/QR-code/圆圆微信.png" alt="">-->
+          <!--<p>饥人谷班主任小姐姐：）</p>-->
+        <!--</div>-->
+        <!--<div class="public-code">-->
+          <!--<img src="./images/QR-code/圆圆微信.png" alt="">-->
+          <!--<p>饥人谷微信公众号♂</p>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--<div class="back">-->
+        <!--<span><</span>-->
+        <!--返回-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</section>-->
+
+  <section class="booking section-wrapper">
+    <img src="./images/QR-code/code-bg.png" alt="">
+    <div class="content-wrap">
+      <h1>欢迎您的信任！您有以下三种方式报名「前端系统班」</h1>
+      <div class="QR-wrap">
+        <div class="sister-code code-wrap">
+          <span>1</span>
+          <p>打开微信扫码添加饥人谷班 主任小姐姐微信报名课程</p>
+          <img src="./images/QR-code/圆圆微信.png" alt="">
+        </div>
+        <div class="public-code code-wrap">
+          <span>2</span>
+          <p>直接去「写代码啦」在线购买</p>
+          <img src="./images/QR-code/圆圆微信.png" alt="">
+        </div>
+        <div class="phone code-wrap">
+          <span>3</span>
+          <p>和我们聊一聊后再做决定。下面是我们的电话号码。</p>
+          <img src="./images/QR-code/圆圆微信.png" alt="">
+        </div>
+      </div>
+      <div class="tip">
+        <span>注：安卓用户尽量在微信平台扫描此二维码，以便您有更好的体验。</span>
+      </div>
+      <h2>还没下定决心？或许您可以看看这些</h2>
+      <div class="more-select">
+        <ul>
+          <li>
+            <a href="#">知乎：在饥人谷学习是一种什么样的体验
+              <img src="./images/QR-code/back.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">知乎：在饥人谷学习是一种什么样的体验，你或许应该看看这些
+              <img src="./images/QR-code/back.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">知乎：在饥人谷学习是一种什么样的体验
+              <img src="./images/QR-code/back.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">知乎：在饥人谷学习是一种什么样的体验
+              <img src="./images/QR-code/back.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#">知乎：在饥人谷学习是一种什么样的体验
+              <img src="./images/QR-code/back.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
   <script src="./index.js"></script>
