@@ -55,6 +55,10 @@ $('.qanda-wrapper').on('click','li',function () {
   $(this).toggleClass('active')
 })
 
+$('.contact-wrapper .contact-phone').on('click','li',function () {
+  $(this).toggleClass('active')
+})
+
 $('.book-button > span').on('click',function(){
   $(this).toggleClass('active')
 })

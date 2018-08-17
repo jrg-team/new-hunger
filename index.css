@@ -16,6 +16,7 @@
 @import "./css/comment.scss";
 @import "./css/submit-success.scss";
 @import "./css/booking.scss";
+@import "./css/map.scss";
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
