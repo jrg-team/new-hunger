@@ -3,8 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=tWk6vPPLYlYV0ZUtSu8WSchZmfmhW714"></script>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-
+  <section class="map-wrapper section-wrapper">
+    <main>
+      <h1>联系我们</h1>
+      <div id="address"></div>
+    </main>
+  </section>
 </body>
+<script src="./index.js"></script>
+<script>
+  // 百度地图API功能
+  var map = new BMap.Map("address");
+  var point = new BMap.Point(120.208351,30.196947);
+  var marker = new BMap.Marker(point);
+
+  map.centerAndZoom(point,12);
+  // 创建地址解析器实例
+  var myGeo = new BMap.Geocoder();
+  map.addOverlay(marker);              // 将标注添加到地图中
+  map.centerAndZoom(point, 15);
+  var opts = {
+    width : 200,     // 信息窗口宽度
+    height: 100,     // 信息窗口高度
+    title : "杭州饥人谷教育科技有限公司" , // 信息窗口标题
+    enableMessage:true,//设置允许信息窗发送短息
+    message:"杭州市滨江区秋溢路228号6w302"
+  }
+  var infoWindow = new BMap.InfoWindow("地址：杭州市滨江区秋溢路228号江虹国际创意园6w302", opts);  // 创建信息窗口对象
+  marker.addEventListener("click", function(){
+    map.openInfoWindow(infoWindow,point); //开启信息窗口
+  });
+</script>
 </html>
