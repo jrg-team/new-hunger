@@ -3,9 +3,9 @@ import Swiper from 'swiper'
 
 $(document).ready(function () {
   $('#banner-bg').animate({
-    top:"-400px",
+    top:"-300px",
     opacity: 0.2
-  }, 520,function(){
+  }, 620,function(){
     $('#banner-bg').animate({ opacity: 1 },400)
   });
 
@@ -20,8 +20,11 @@ $(document).ready(function () {
   },900)
   $('#book-details').animate({
     right:"0px",
-    opacity: 0.5
-  },900)
+    opacity: 0.3
+  },900,function(){
+    $(this).animate({ opacity: 1 },500)
+    $(this).find('ul').animate({ opacity: 1 },500)
+  })
 })
 
 let studySwiper = {
@@ -56,8 +59,9 @@ $('.book-button > span').on('click',function(){
   $(this).toggleClass('active')
 })
 
-$('.banner-wrapper .aside > .loadMore').on('click',function(){
+$('.banner-wrapper .aside > .loadMore ').on('click',function(){
   $(this).find('.load-wrap').toggleClass('active')
+  $(this).find('.more-icon').toggleClass('active')
 })
 
 $('section.banner-wrapper > .content-wrapper > header').on('click','li',function(){
@@ -67,6 +71,9 @@ $('section.banner-wrapper > .content-wrapper > header').on('click','li',function
   $(this).addClass('active')
 })
 $('.connection-pc').on('click','li',function () {
+  $(this).toggleClass('active')
+})
+$('section.free_trial_request > .content-wrap > .from-wrap > .submit > span').on('click',function(){
   $(this).toggleClass('active')
 })
 
