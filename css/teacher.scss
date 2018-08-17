@@ -42,10 +42,16 @@ section.teachers-wrapper{
 
 @media (max-width: 499px){
   section.teachers-wrapper{
+    .view{
+      overflow-x: scroll;
+      -webkit-overflow-scrolling:touch;
+    }
     ul{
-      overflow-x: auto;
+      display: flex;
+      width: 300vw;
+      justify-content: space-between;
       li{
-        width: 100%;
+        width: calc(100vw - 20px);
       }
     }
   }
