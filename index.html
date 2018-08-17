@@ -7,9 +7,46 @@
   <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-  <p> 饥人谷首页 </p>
-  <section>
-    <h1>您将会学到什么？</h1>
+  <section class="banner-wrapper">
+    <video src="./images/banner/banner-mp4.mp4" autoplay loop
+            id="video"></video>
+    <img src="./images/banner/banner-bg.png" alt=""
+         class="banner-bg" id="banner-bg" style="top: 800px; opacity: 0;">
+    <div class="content-wrapper">
+      <header>
+        <ul>
+          <li><img src="./images/banner/logo.svg" alt="" class="logo"></li>
+          <li>前端</li>
+          <li>java</li>
+          <li>关于鸡人谷</li>
+        </ul>
+        <div class="aside">
+          <div class="loadMore">
+            <img src="./images/banner/more.svg" alt="">
+            <span class="load-wrap active">
+            <a href="#">回到旧版</a>
+            <a href="#">写代码啦</a>
+          </span>
+          </div>
+          <div class="call">
+            <img src="./images/banner/call.svg" alt="">
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="book">
+          <h1 id="engineer" style="position: relative; left: -1000px;">前端工程师</h1>
+          <p style="opacity: 0;">在线课程将教你编程网站的视觉部分，并有机会从头开始从事IT专业！</p>
+          <div class="book-button" style="position: relative; left: -1000px;">
+            <span>立即报名</span>
+          </div>
+        </div>
+        <div class="description" id="book-details"
+             style="position: relative; right: -1000px; opacity: 0;">
+
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="choose-wrapper section-wrapper">
@@ -101,7 +138,6 @@
       </li>
     </ul>
   </section>
-
   <section class="will-study section-wrapper">
     <h1>您将会学到什么？</h1>
     <h2>掌握了这一职业后，您将能够创建不同复杂程度的项目，以补充您自己的投资组合。</h2>
@@ -111,19 +147,29 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./images/will_study/swiper.png" alt="">
+            <span class="dot"></span>
+            <span class="dot-line"></span>
           </div>
           <div class="swiper-slide">
             <img src="./images/will_study/swiper.png" alt="">
+            <span class="dot"></span>
+            <span class="dot-line"></span>
           </div>
           <div class="swiper-slide">
             <img src="./images/will_study/swiper.png" alt="">
+            <span class="dot"></span>
+            <span class="dot-line"></span>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/will_study/swiper.png" alt="">
+            <span class="dot"></span>
+            <span class="dot-line"></span>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
-
   <section class="service-wrapper section-wrapper">
     <main class="service">
       <h1>为了让大爷您学的舒服，我们有以下服务</h1>
@@ -444,7 +490,7 @@
           </li>
           <div class="title">
             <div class="icon">
-              <img src="./images/1/teacher.svg" alt="">
+              <img src="./images/banner/teacher.svg" alt="">
             </div>
             <p>关于更多服务信息，点这里</p>
           </div>

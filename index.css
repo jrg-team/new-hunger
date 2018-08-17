@@ -2,6 +2,7 @@
 @import url(./css/reset.css);
 @import url(./node_modules/swiper/dist/css/swiper.css);
 @import url(./css/common.scss);
+@import url(./css/banner.scss);
 @import url(./css/choose.scss);
 @import url(./css/get_something.scss);
 @import url(./css/will_study.scss);
