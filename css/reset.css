@@ -1,8 +1,0 @@
-* { box-sizing: border-box; margin: 0; padding: 0;}
-*::before { box-sizing: border-box; }
-*::after { box-sizing: border-box; }
-h1, h2, h3, h4, h5, h6 { color: inherit; font-weight: normal; margin: 0;}
-svg { fill: currentColor; }
-a {text-decoration: none; color: inherit;}
-ul, ol {list-style: none;}
-input, button, select, textarea {font: inherit;}
