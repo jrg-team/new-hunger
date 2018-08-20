@@ -1,25 +1,14 @@
-# new-hunger
+## html文件说明
 
-# 饥人谷新首页
+1. fe.html: 前端介绍页
+2. fe-course-list.html: 前端课程列表页
+3. fe-detail.html: 前端内容详情页
+4. about.html: 关于我们也没
 
-[预览链接](https://jrg-team.github.io/new-hunger/)
-
-# 发布
-
-```
-num run deploy //master 分支下
-```
-
-# 本地调试
+## 开发
 
 ```
-git clone git@github.com:jrg-team/new-hunger.git
-cd new-hunger
-yarn install
-parcel index.html //如需调试 java 首页则执行 parcel java.html
-```
+npm install
 
-# 打包
-```
-npm run build
+parcel fe.html
 ```

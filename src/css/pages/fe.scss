@@ -1,0 +1,27 @@
+@import url('../common/base.scss');
+@import url('../common/reset.scss');
+@import url('../../../node_modules/swiper/dist/css/swiper.css');
+@import url('../components/layout.scss');
+@import url('../components/header.scss');
+@import url('../components/banner.scss');
+@import url('../components/get_something.scss');
+@import url('../components/choose.scss');
+@import url('../components/service.scss');
+@import url('../components/will_study.scss');
+@import url('../components/curriculum.scss');
+@import url('../components/teacher.scss');
+@import url('../components/company.scss');
+@import url('../components/common.scss');
+@import url('../components/comment.scss');
+@import url('../components/free_trial_request.scss');
+@import url('../components/qanda.scss');
+@import url('../components/about_banner.scss');
+@import "../components/contact.scss";
+@import "../components/submit-success.scss";
+@import "../components/booking.scss";
+@import "../components/statistics.scss";
+@import "../components/map.scss";
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}

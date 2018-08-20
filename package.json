@@ -1,14 +1,14 @@
 {
-  "name": "new-hunger",
-  "version": "0.0.1",
+  "name": "new-hunger2",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "repository": "git@github.com:jrg-team/new-hunger.git",
-  "author": "Zegendary <zxw1992513@qq.com>",
-  "license": "MIT",
+  "repository": "git@github.com:jrg-team/new-hunger2.git",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages-deploy -- 'A custom commit message'",
-    "build": "parcel build index.html java.html about.html --no-source-maps --public-url ./",
-    "clean-source": "rimraf README.md src webroot package.json css images js dist index.css index.js",
+    "build": "parcel build fe.html fe-course-list.html fe-detail.html java.html java-course-list.html java-detail.html success.html about.html apply.html courses.html --no-source-maps --public-url ./",
+    "clean-source": "rimraf README.md src webroot package.json src/css src/assets src/js dist",
     "clear-dist": "rimraf dist"
   },
   "gh-pages-deploy": {
@@ -23,14 +23,19 @@
     ],
     "noprompt": true
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^9.1.1",
+    "babel-preset-env": "^1.7.0",
     "jquery": "^3.3.1",
-    "normalize.css": "^8.0.0",
-    "parcel": "^1.9.7",
+    "node-sass": "^4.9.3",
     "swiper": "^4.3.5"
   },
   "devDependencies": {
     "gh-pages-deploy": "^0.5.0",
-    "node-sass": "^4.9.3"
+    "babel-core": "^6.26.3",
+    "cssnano": "^4.0.5"
   }
 }

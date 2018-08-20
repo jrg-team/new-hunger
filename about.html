@@ -1,285 +1,350 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Document</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=tWk6vPPLYlYV0ZUtSu8WSchZmfmhW714"></script>
-  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./src/css/pages/about.scss">
 </head>
 <body>
-  <section class="course-wrapper section-wrapper">
-    <main>
-      <h1>选择一个适合你的职业培训课程</h1>
-
-    </main>
+  <section class="company-details">
+    <main class="container">
+    <header>
+      <ul>
+        <li><img src="./src/assets/images/logo-dark.png" alt="" class="logo"></li>
+        <li><a href="fe.html">前端</a></li>
+        <li><a href="java.html">Java</a></li>
+        <li  class="active"><a href="about.html">关于「饥人谷」</a></li>
+      </ul>
+      <div class="aside">
+        <a href="#" class="back">
+          <i class="iconfont jrg-fanhui"></i>
+          回到旧版
+        </a>
+        <a href="https://static.meiqia.com/dist/standalone.html?_=t&eid=61296">
+          <i class="iconfont jrg-kefu"></i>
+        </a>
+      </div>
+    </header>
+    <div class="content">
+      <div class="book">
+        <img class="engineer" style="position: relative; left: -1000px;" src="./src/assets/images/banner/logo.svg"/>
+        <p style="opacity: 0;">在线课程将教你编程网站的视觉部分，并有机会从头开始从事IT专业！</p>
+        <div class="book-button" style="position: relative; left: -1000px;">
+          <a href="courses.html">立即报名</a>
+        </div>
+      </div>
+      <div class="bg book-details" style="position: relative; right: -1000px; opacity: 0;"></div>
+    </div>
+  </main>
   </section>
-  <section class="statistics-wrapper section-wrapper">
-    <main>
+  <section class="statistics-wrapper">
+    <main class="container">
       <h1>数据呢，就是这些数据，你们看一下就好</h1>
       <ul class="content">
         <li>
-          <p>60+</p>
-          <p>培训计划</p>
+          <p>500+</p>
+          <p>培训人数（每年）</p>
         </li>
         <li>
-          <p>60+</p>
-          <p>培训计划</p>
+          <p>30+</p>
+          <p>精品课程</p>
         </li>
         <li>
-          <p>60+</p>
-          <p>培训计划</p>
+          <p>4+</p>
+          <p>年培训经验</p>
         </li>
         <li>
-          <p>60+</p>
-          <p>培训计划</p>
-        </li>
-      </ul>
-      <ul class="content">
-        <li>
-          <p>60+</p>
-          <p>培训计划</p>
-        </li>
-        <li>
-          <p>60+</p>
-          <p>培训计划</p>
-        </li>
-        <li>
-          <p>60+</p>
-          <p>培训计划</p>
-        </li>
-        <li>
-          <p>60+</p>
-          <p>培训计划</p>
+          <p>3000+</p>
+          <p>小时视频时长</p>
         </li>
       </ul>
     </main>
   </section>
-  <section class="service-wrapper section-wrapper">
-    <main class="service">
-      <h1>为了让大爷您学的舒服，我们有以下服务</h1>
+  <section class="service-wrapper">
+    <main class="service container">
+      <h1>我们提供以下服务</h1>
       <h3>掌握了这一职业后，您将能够创建不同复杂程度的项目，以补充您自己的投资组合。</h3>
       <ul>
         <li>
           <div class="icon-wrapper">
-            <img src="./images/service/task.svg" alt="">
+            <i class="iconfont jrg-renwu"></i>
           </div>
           <div class="content">
-            <p class="title">视频课程＋通关任务</p>
-            <p>培训在专门开发的平台上实时进行将能够以在线格式与教师沟通，完成作业并与团体中的其他成员交换信息</p>
+            <p class="title">视频课程＋通关任务 </p>
+            <p>系统班的主线学习是通过做任务晋级的方式来学习的。把必修班的系统课程学习拆分成50多个学习任务。每个任务里面包括课程视频和学习资料，任务练习，过关后继续后面的学习。  </p>
           </div>
         </li>
         <li>
           <div class="icon-wrapper">
-            <img src="./images/service/live.svg" alt="">
+            <i class="iconfont jrg-live"></i>
           </div>
           <div class="content">
-            <p class="title">拓展课程——直播课</p>
-            <p>在线学习是一个在舒适的环境中学习的机会。
-              礼堂可以是公共场所，公园，咖啡馆或舒适的房子，配有柔软的拖鞋，一杯茶和最喜欢的猫。您唯一需要的是一台可上网的电脑。</p>
+            <p class="title">拓展课程—直播课 </p>
+            <p>每周2次直播课，针对大家的学习，给大家讲解职业发展规划，学习方法，拓展知识、模拟面试项目课程等 。</p>
           </div>
         </li>
         <li>
           <div class="icon-wrapper">
-            <img src="./images/service/q&a.svg" alt="">
+            <i class="iconfont jrg-answer"></i>
           </div>
           <div class="content">
-            <p class="title">集中式答疑live</p>
-            <p>在线学习是一个在舒适的环境中学习的机会。
-              礼堂可以是公共场所，公园，咖啡馆或舒适的房子，配有柔软的拖鞋，一杯茶和最喜欢的猫。您唯一需要的是一台可上网的电脑。</p>
+            <p class="title">拓展课程+答疑live </p>
+            <p>每周2次“答疑live”，老师在微信群进行0时差答疑辅导，老师不定期还会分享编程套路和技巧哦~ </p>
           </div>
         </li>
         <li>
           <div class="icon-wrapper">
-            <img src="./images/service/project.svg" alt="">
+            <i class="iconfont jrg-xiangmu"></i>
           </div>
           <div class="content">
-            <p class="title">毕设项目</p>
-            <p>培训在专门开发的平台上实时进行将能够以在线格式与教师沟通，完成作业并与团体中的其他成员交换信息</p>
+            <p class="title">毕设项目 </p>
+            <p>课程后期可以参加毕业设计的项目，毕设可以选择4个以上，任务里的实战作品和毕设项目都是可以放到简历的哦~再也不怕简历没有内容可写啦！ </p>
           </div>
         </li>
         <li>
           <div class="icon-wrapper">
-            <img src="./images/service/wechat.svg" alt="">
+            <i class="iconfont jrg-guide"></i>
           </div>
           <div class="content">
-            <p class="title">班级群交流辅导</p>
-            <p>培训在专门开发的平台上实时进行将能够以在线格式与教师沟通，完成作业并与团体中的其他成员交换信息</p>
+            <p class="title">班级群交流辅导 </p>
+            <p>平时的任务学习并不是放养式自学，老师和同学都在班级群里面，大家可以随时交流，而且随时@老师提问，老师每天都在班里辅导大家，有问题一定及时主动提问！有问必答。 </p>
           </div>
         </li>
         <li>
           <div class="icon-wrapper">
-            <img src="./images/service/chat.svg" alt="">
+            <i class="iconfont jrg-jiaotan"></i>
           </div>
           <div class="content">
-            <p class="title">一对一深聊</p>
-            <p>培训在专门开发的平台上实时进行将能够以在线格式与教师沟通，完成作业并与团体中的其他成员交换信息</p>
+            <p class="title">一对一深聊 </p>
+            <p>遇到学习瓶颈或者困惑可以约老师单独语音聊天</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="icon-wrapper">
+            <i class="iconfont jrg-monimianshi"></i>
+          </div>
+          <div class="content">
+            <p class="title">求职指导和内推  </p>
+            <p>找工作时可以找老师进行简历和笔试面试的指导，谷里有合适的岗位也可以内推给大家哦~ </p>
+          </div>
+        </li>
+        <li>
+          <div class="icon-wrapper">
+            <i class="iconfont jrg-kebiao"></i>
+          </div>
+          <div class="content">
+            <p class="title">模拟面试  </p>
+            <p>一对一模拟面试，提前感受面试的全过程 </p>
+          </div>
+        </li>
+        <li>
+          <div class="icon-wrapper">
+            <i class="iconfont jrg-recommend"></i>
+          </div>
+          <div class="content">
+            <p class="title">查看课表 </p>
+            <p>每周一在会把当周学习内容课表发布在班级，课表也可在【饥人谷】微信公众号后台，回复：课表，获取当周对应的课表</p>
           </div>
         </li>
       </ul>
     </main>
   </section>
-  <section class="teachers-wrapper section-wrapper">
-    <main class="teachers">
+  <section class="teachers-wrapper">
+    <main class="teachers container">
       <h1>您将向专业人士学习</h1>
-      <h3>饥人谷团队聚集了最优秀的从业者：经理，资深专家和具有多年经验的专家</h3>
+      <h3>饥人谷团队聚集了优秀的前端工程师他们有丰富的项目经验和教学经验。</h3>
       <div class="view">
         <ul>
           <li>
-            <img src="./images/teachers/fang.jpg" alt="头像">
-            <h2 class="name">方方</h2>
-            <h4>title 呗，反正就是那些，随便写写</h4>
-            <p>这个就一定的靠着都不怒的不错都不不 发扣扣你看你看你女方就能解决你肌肤你可能包括烦恼看你女方办法吃不饱和感必备呢甚或</p>
+            <img src="./src/assets/images/avatar/fang.jpg" alt="头像">
+            <h2 class="name">方方老师 </h2>
+            <h4>饥人谷最受欢迎老师之一</h4>
+            <p>资深前端开发、饥人谷资深前端讲师，饥人谷课程及技术CTO。华中科技大学毕业，毕业后先后在腾讯、阿里巴巴和彩程任职。 </p>
           </li>
           <li>
-            <img src="./images/teachers/fang.jpg" alt="头像">
-            <h2 class="name">方方</h2>
-            <h4>title 呗，反正就是那些，随便写写</h4>
-            <p>这个就一定的靠着都不怒的不错都不不 发扣扣你看你看你女方就能解决你肌肤你可能包括烦恼看你女方办法吃不饱和感必备呢甚或</p>
+            <img src="./src/assets/images/avatar/若愚.jpg" alt="头像">
+            <h2 class="name">若愚老师 </h2>
+            <h4>善于把复杂的问题讲简单</h4>
+            <p>北航硕士，前百度、阿里巴巴工程师，饥人谷最受欢迎的讲师之一，擅长Node.JS、Vue.js技术栈，善于把复杂的问题讲简单。 </p>
           </li>
           <li>
-            <img src="./images/teachers/fang.jpg" alt="头像">
-            <h2 class="name">方方</h2>
-            <h4>title 呗，反正就是那些，随便写写</h4>
-            <p>这个就一定的靠着都不怒的不错都不不 发扣扣你看你看你女方就能解决你肌肤你可能包括烦恼看你女方办法吃不饱和感必备呢甚或</p>
+            <img src="./src/assets/images/avatar/alex.jpg" alt="头像">
+            <h2 class="name">Alex</h2>
+            <h4>亚马逊(美国)资深Java工程师</h4>
+            <p>Alex老师毕业于卡内基梅隆大学，现任职于亚马逊AWS（美国硅谷）从事云计算服务开发工作，前腾讯工程师。现在主要学习和研究函数式编程和分布式系统相关领域。</p>
           </li>
         </ul>
       </div>
     </main>
   </section>
-  <!--毕业生在哪里工作-->
-  <section class="company-wrapper section-wrapper">
-    <main>
+  <section class="company-wrapper">
+    <main class="container">
       <h1>我们的毕业生在哪里工作</h1>
       <ul class="content">
         <li class="logo">
-          <img src="./images/logo/alibaba.svg" alt="">
-          <img src="./images/logo/alibabad.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/alibaba.svg" alt="">
+          <img src="./src/assets/images/logo/alibabad.svg" alt="" class="active">
           <p>阿里巴巴</p>
         </li>
         <li class="logo">
-          <img src="./images/logo/tencent.svg" alt="">
-          <img src="./images/logo/tencentd.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/tencent.svg" alt="">
+          <img src="./src/assets/images/logo/tencentd.svg" alt="" class="active">
           <p>腾讯</p>
         </li>
         <li class="logo">
-          <img src="./images/logo/baidu.svg" alt="">
-          <img src="./images/logo/baidud.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/baidu.svg" alt="">
+          <img src="./src/assets/images/logo/baidud.svg" alt="" class="active">
           <p>百度</p>
         </li>
         <li class="logo">
-          <img src="./images/logo/bilibili.svg" alt="">
-          <img src="./images/logo/bilibilid.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/bilibili.svg" alt="">
+          <img src="./src/assets/images/logo/bilibilid.svg" alt="" class="active">
           <p> 哔哩哔哩</p>
         </li>
         <li class="logo">
-          <img src="./images/logo/dd.svg" alt="">
-          <img src="./images/logo/ddd.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/dd.svg" alt="">
+          <img src="./src/assets/images/logo/ddd.svg" alt="" class="active">
           <p> 滴滴</p>
         </li>
         <li class="logo">
-          <img src="./images/logo/meituan.svg" alt="">
-          <img src="./images/logo/meituand.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/meituan.svg" alt="">
+          <img src="./src/assets/images/logo/meituand.svg" alt="" class="active">
           <p> 美团</p>
         </li>
         <li class="logo">
-          <img src="./images/logo/qudian.svg" alt="">
-          <img src="./images/logo/qudiand.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/qudian.svg" alt="">
+          <img src="./src/assets/images/logo/qudiand.svg" alt="" class="active">
           <p>趣店</p>
         </li>
         <li class="logo">
-          <img src="./images/logo/toutiao.svg" alt="">
-          <img src="./images/logo/toutiaod.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/toutiao.svg" alt="">
+          <img src="./src/assets/images/logo/toutiaod.svg" alt="" class="active">
           <p> 今日头条</p>
         </li>
         <li class="logo">
-          <img src="./images/logo/360.svg" alt="">
-          <img src="./images/logo/360d.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/360.svg" alt="">
+          <img src="./src/assets/images/logo/360d.svg" alt="" class="active">
           <p> 360</p>
         </li>
         <li class="logo">
-          <img src="./images/logo/ele.svg" alt="">
-          <img src="./images/logo/eled.svg" alt="" class="active">
+          <img src="./src/assets/images/logo/ele.svg" alt="">
+          <img src="./src/assets/images/logo/eled.svg" alt="" class="active">
           <p> 饿了么</p>
         </li>
       </ul>
     </main>
   </section>
-  <!--评价-->
-  <section class="comment-wrapper section-wrapper">
-    <main>
-      <h1>听听学长们怎么说的?</h1>
+  <section class="comment-wrapper">
+    <main class="container">
+      <h1>看看「饥人谷」的同学们是怎么说的 ?</h1>
       <div class="comment-container swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="content">
-              <img src="./images/comment/marks.svg" alt="">
-              评论内容
-            </div>
+            <a href="https://www.zhihu.com/question/41845934/answer/123528838" class="content">
+              <i class="iconfont jrg-yinhao"></i>
+              新的开始：人生的新篇章开始了，真的很感谢若愚老师、方方老师、墨凌、青青还有任务3班的同学们。
+            </a>
             <div class="user">
-              <img src="./images/comment/avatar.jpg" alt="">
+              <img src="./src/assets/images/avatar/柯同学.jpg" alt="">
               <div class="info">
-                <p class="name">梁天展</p>
-                <p> 饥人谷1801期学员 </p>
+                <p class="name">柯同学</p>
+                <a href="https://www.zhihu.com/question/41845934/answer/123528838"> 直播8班学员 </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="content">
-              <img src="./images/comment/marks.svg" alt="">
-            </div>
+            <a href="https://www.zhihu.com/question/41845934/answer/451886141" class="content">
+              <i class="iconfont jrg-yinhao"></i>
+              认真的学完系统班，认真的做毕设，认真的敲代码思考，认真的写总结。找一份工作完全没有问题。如果没有找到一定是自身的问题。
+            </a>
             <div class="user">
-              <img src="./images/comment/marks.svg" alt="">
+              <img src="./src/assets/images/comment/avatar.jpg" alt="">
               <div class="info">
-                <p class="name">梁天展</p>
-                <p> 饥人谷1801期学员 </p>
+                <p class="name">余同学</p>
+                <a href="https://www.zhihu.com/question/41845934/answer/451886141"> 1803班学员 </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="content">
-              <img src="./images/comment/marks.svg" alt="">
-            </div>
+            <a href="https://www.zhihu.com/question/41845934/answer/93151919" class="content">
+              <i class="iconfont jrg-yinhao"></i>
+              如果你想学真东西，可以来饥人谷试听，几节课后，再做决定，不迟。这里的大家都是很认真负责的，很温暖。
+            </a>
             <div class="user">
-              <img src="./images/comment/marks.svg" alt="">
+              <img src="./src/assets/images/avatar/叶同学.jpg" alt="">
               <div class="info">
-                <p class="name">梁天展</p>
-                <p> 饥人谷1801期学员 </p>
+                <p class="name">叶同学</p>
+                <a href="https://www.zhihu.com/question/41845934/answer/93151919"> 饥人谷前端三班 </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="content">
-              <img src="./images/comment/marks.svg" alt="">
-            </div>
+            <a href="https://www.zhihu.com/question/41845934/answer/97722446" class="content">
+              <i class="iconfont jrg-yinhao"></i>
+              如果你热爱前端，想要进入前端领域，那么选择饥人谷吧。在饥人谷，你将收获的不仅仅只是前端方面的知识。
+            </a>
             <div class="user">
-              <img src="./images/comment/marks.svg" alt="">
+              <img src="./src/assets/images/avatar/曾同学.jpg" alt="">
               <div class="info">
-                <p class="name">梁天展</p>
-                <p> 饥人谷1801期学员 </p>
+                <p class="name">曾同学</p>
+                <a href="https://www.zhihu.com/question/41845934/answer/97722446"> 饥人谷学员 </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="content">
-              <img src="./images/comment/marks.svg" alt="">
-            </div>
+            <a href="https://www.zhihu.com/question/41845934/answer/463611118" class="content">
+              <i class="iconfont jrg-yinhao"></i>
+              饥人谷的班主任们真的会有求必应，不管是课程问题还是一些找工作的简历问题，都会提供一定的帮助。
+            </a>
             <div class="user">
-              <img src="./images/comment/marks.svg" alt="">
+              <img src="./src/assets/images/avatar/程同学.jpg" alt="">
               <div class="info">
-                <p class="name">梁天展</p>
-                <p> 饥人谷1801期学员 </p>
+                <p class="name">程同学</p>
+                <a href="https://www.zhihu.com/question/41845934/answer/463611118"> 饥人谷学员 </a>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="content">
-              <img src="./images/comment/marks.svg" alt="">
-            </div>
+            <a href="https://www.zhihu.com/question/41845934/answer/121511112" class="content">
+              <i class="iconfont jrg-yinhao"></i>
+              感谢带我入行的老师，饥人谷这个平台以及和我一起上课的同学，真的对我有很大的的帮助
+            </a>
             <div class="user">
-              <img src="./images/comment/marks.svg" alt="">
+              <img src="./src/assets/images/avatar/张同学.jpg" alt="">
               <div class="info">
-                <p class="name">梁天展</p>
-                <p> 饥人谷1801期学员 </p>
+                <p class="name">张同学</p>
+                <a href="https://www.zhihu.com/question/41845934/answer/121511112"> 饥人谷八班学员 </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.zhihu.com/question/41845934/answer/462391518" class="content">
+              <i class="iconfont jrg-yinhao"></i>
+              如果你真的用心学习了，用心学扎实了，你真的可以找个前端工作。老师教会你怎么去走路，走不走的稳，能走多远还是得看自己。
+            </a>
+            <div class="user">
+              <img src="./src/assets/images/avatar/雪同学.jpg" alt="">
+              <div class="info">
+                <p class="name">雪同学</p>
+                <a href="https://www.zhihu.com/question/41845934/answer/462391518"> 饥人谷学员 </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <a href="https://www.zhihu.com/question/41845934/answer/351179279" class="content">
+              <i class="iconfont jrg-yinhao"></i>
+              其实饥人谷很硬气的，不满意随时退费，而且学费很便宜，所以想学得请冲动一点。不试一试怎么知道好不好。
+            </a>
+            <div class="user">
+              <img src="./src/assets/images/avatar/司徒同学.jpg" alt="">
+              <div class="info">
+                <p class="name">司徒同学</p>
+                <a href="https://www.zhihu.com/question/41845934/answer/351179279"> 饥人谷学员 </a>
               </div>
             </div>
           </div>
@@ -288,125 +353,108 @@
       </div>
     </main>
   </section>
-  <!--倒数第二个模块-->
-  <section class="qanda-wrapper section-wrapper">
-    <main class="q&a">
-      <h1>在你报名前 或许你应该先看看</h1>
+  <section class="map-wrapper">
+    <main class="container">
+      <h1>联系我们</h1>
       <div class="content">
         <ul>
           <li>
-            <div class="title">
-              <div class="icon">
-                <span class="x"></span>
-              </div>
-              <p class="question">问题 老师好不好？讲课是否仔细</p>
-            </div>
-            <div class="drop-down">
-              <div class="drop-down-content">
-                回答 非常棒帮到家了，来听听听就知道了，我的输入法好卡啊？来听听听就知道了，我的输入法好卡啊？
-              </div>
-            </div>
+            <i class="iconfont jrg-address"></i>
+            <span>浙江省杭州市滨江区江虹国际创意园6w302</span>
           </li>
-        </ul>
-        <ul>
           <li>
-            <div class="title">
-              <div class="icon">
-                <span class="x"></span>
-              </div>
-              <p class="question">问题 老师好不好？讲课是否仔细</p>
-            </div>
-            <div class="drop-down">
-              <div class="drop-down-content">
-                回答 非常棒帮到家了，来听听听就知道了，我的输入法好卡啊？来听听听就知道了，我的输入法好卡啊？
-              </div>
-            </div>
+            <i class="iconfont jrg-dianhua1"></i>
+            <span>13018975363</span>
           </li>
-          <div class="title">
-            <div class="icon">
-              <img src="./images/banner/teacher.svg" alt="">
-            </div>
-            <p>关于更多服务信息，点这里</p>
-          </div>
+          <li>
+            <i class="iconfont jrg-email"></i>
+            <span>2054185664@qq.com</span>
+          </li>
+          <li>
+            <i class="iconfont jrg-gongzhonghao"></i>
+            <span>微信公众号：hungertrain</span>
+          </li>
         </ul>
+        <div id="address"></div>
       </div>
     </main>
   </section>
-  <section class="map-wrapper section-wrapper">
-    <main>
-      <h1>联系我们</h1>
-      <div id="address"></div>
-    </main>
-  </section>
-  <!--联系我们-->
-  <section id="contact" class="contact-wrapper section-wrapper">
-    <main class="contact-pc">
+  <section id="contact" class="contact-wrapper">
+    <main class="contact-pc container">
       <h1>加入饥人谷，我们帮您选择您需要的课程。</h1>
       <div class="content">
         <div class="career">
           <h4> 职业</h4>
           <p>
-            <a href="/">前端工程师</a>
+            <a href="fe.html">前端工程师</a>
           </p>
           <p>
-            <a href="/">Java工程师</a>
+            <a href="java.html">Java工程师</a>
           </p>
         </div>
         <div class="course">
-          <h4> 课程</h4>
+          <h4>课程</h4>
           <p>
-            <a href="/">前端工程师</a>
+            <a href="https://xiedaimala.com/courses/ec3a5e28-02da-47d6-9226-927db23e82a2#/common">前端系统班</a>
           </p>
           <p>
-            <a href="/">Java工程师</a>
+            <a href="https://xiedaimala.com/courses/d5021265-b62f-4986-a76f-40d6c2a339c3#/common">Java系统班</a>
           </p>
           <p>
-            <a href="/">更多课程</a>
+            <a href="https://xiedaimala.com/courses">更多课程</a>
           </p>
         </div>
         <div class="link">
           <h4> 一些外链</h4>
           <p>
-            <a href="/">「饥人谷」知乎主页</a>
+            <a href="https://zhuanlan.zhihu.com/study-fe">「饥人谷」知乎主页</a>
           </p>
           <p>
-            <a href="/">「饥人谷」简书主页</a>
+            <a href="https://www.jianshu.com/c/38dd7fc9033a">「饥人谷」简书主页</a>
           </p>
           <p>
-            <a href="/"> 写代码啦</a>
+            <a href="https://xiedaimala.com/"> 写代码啦</a>
           </p>
         </div>
         <div class="connection-pc">
-          <h4> 联系</h4>
+          <h4>联系我们</h4>
           <ul>
             <li>
-              <img src="./images/contact/phone.svg" alt="">
-              <span class="triangle">◀</span>
-              <div class="box">
-                <p> 青青：15558195629</p>
-                <p> cherry：15558195629</p>
-                <p> 圆圆：15558195629</p>
+              <div class="icon-wrapper">
+                <i class="triangle iconfont jrg-arrow-solid-left-copy"></i>
+                <i class="iconfont jrg-phone"></i>
+              </div>
+              <div class="box phone">
+                <p> <span></span> 15558137209</p>
+                <p> <span></span> 13018975363</p>
               </div>
             </li>
             <li>
-              <a href="http://wpa.qq.com/msgrd?v=3&uin=2054185664&site=qq&menu=yes">
-                <img src="./images/contact/qq.svg" alt="">
-              </a>
+              <div class="icon-wrapper">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=2054185664&site=qq&menu=yes" class="iconfont jrg-qq">
+                </a>
+              </div>
             </li>
             <li>
-              <img src="./images/contact/wechat.svg" alt="">
-              <span class="triangle">◀</span>
+              <div class="icon-wrapper">
+                <i class="triangle iconfont jrg-arrow-solid-left-copy"></i>
+                <i class="iconfont jrg-weixin"></i>
+              </div>
               <div class="box wechat-qr-wrapper">
-                <img class="wechat_qr" src="./images/contact/wechat_qr1.png" alt="">
-                <img class="wechat_qr" src="./images/contact/wechat_qr2.png" alt="">
-                <img class="wechat_qr" src="./images/contact/wechat_qr3.png" alt="">
+                <img class="wechat_qr" src="./src/assets/images/contact/wechat_qr1.png" alt="">
+                <img class="wechat_qr" src="./src/assets/images/contact/wechat_qr2.png" alt="">
+                <img class="wechat_qr" src="./src/assets/images/contact/wechat_qr3.png" alt="">
+                <p>打开微信扫面二维码，加饥人谷班主任</p>
               </div>
             </li>
             <li>
-              <img src="./images/contact/weibo.svg" alt="">
-              <span class="triangle">◀</span>
+              <div class="icon-wrapper">
+                <i class="triangle iconfont jrg-arrow-solid-left-copy"></i>
+                <i class="iconfont jrg-weibo"></i>
+              </div>
               <div class="box">
-                <img src="./images/contact/weibo_qr.png" alt="">
+                <img src="./src/assets/images/contact/weibo_qr.png" alt="">
+                <p>打开微博扫面二维码，关注饥人谷微博</p>
               </div>
             </li>
           </ul>
@@ -459,7 +507,7 @@
     </div>
   </section>
 </body>
-<script src="./index.js"></script>
+<script src="./src/js/pages/fe.js"></script>
 <script>
   // 百度地图API功能
   var map = new BMap.Map("address");

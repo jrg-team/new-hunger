@@ -1,0 +1,67 @@
+@import "../common/base";
+
+section.banner-wrapper { background: #394b78; position: relative; height: 800px; overflow: hidden;
+  > #video { position: absolute; left: 0; top: 0; z-index: 1; }
+  > .banner-bg { position: absolute; width:100%; left: 0; top: 0; z-index: 2; }
+  > .container { position: relative;
+    > .content-wrapper {position: absolute; width: 100%; height: 100%; left: 0; top: 0; height: 800px;
+      z-index: 3; padding: 37px 0 57px 0;
+      header { display: flex; justify-content: space-between;
+        ul { display: flex; align-items: center; font-family:PingFangSC-Medium;
+          font-size:16px; color:#ffffff;
+          > li { margin-right: px(160); cursor: pointer; position: relative;
+            &:hover { color: #009ff5; }
+            &.active { color: #009ff5;
+              &:after { content: ''; position: absolute; left: 50%; bottom: -8px; width: 24px; height: 4px;
+                background: #009ff5; border-radius: 4px; transform: translateX(-50%); z-index: 3;
+              }
+            }
+            &:first-child { &:after { display: none; } }
+          }
+          .logo { height: 40px; }
+        }
+        > .aside { display: flex;
+          align-items: center;
+          color: #fff;
+          .back .iconfont{
+            font-size: 16px;
+          }
+          .iconfont{
+            margin-left: 50px;
+            font-size: 28px;
+          }
+        }
+      }
+      .content { display: flex; align-items: center; margin-top: 85px;
+        > .book { margin-right: 100px;
+          > h1 { font-family: $font-mingHeiMonoB; font-size:100px; color: #ffffff; margin-bottom: 50px;}
+          > p { font-family: PingFangSC-Medium; font-size:16px; color: #ffffff; margin-bottom: 50px;}
+          > .book-button { height: 72px; width: 352px; cursor: pointer; user-select: none;
+            outline: none; background: rgba(35, 185, 241, 0.33); border-radius: 48px;
+            border: 0; font-family:PingFangSC-Semibold; font-size:18px; color:#ffffff; display: flex; justify-content: center;
+            align-items: center; padding: 8px;
+            > span { display: flex; width: 100%; height: 100%; background-image: linear-gradient(-90deg, #23B9F1 0%, #009EF5 100%);
+              border-radius: 32px; display: flex; justify-content: center; align-items: center;
+              &.active { background-image: linear-gradient(90deg, #23B9F1 0%, #009EF5 100%); }
+            }
+          }
+        }
+        > .description { width: 500px; height: 500px; background-image: linear-gradient(0deg, rgba(90,112,175,0.39) 0%, rgba(30,44,97,0.39) 100%);
+          box-shadow:0 22px 16px 0 rgba(43,61,118,0.50); border-radius:64px; overflow: hidden;
+          > ul { color: #fff; width: 100%; height: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+            padding-left: 35px;
+            > li { display: flex; width: 50%; align-items: flex-start;
+              .iconfont{
+                font-size: 36px;
+              }
+              > .wrap { width: 120px; margin-left: 16px; font-family:PingFangSC-Medium; font-size:14px;
+                > .title { margin-bottom: 16px; font-family:PingFangSC-Semibold; font-size:18px;}
+                > .detail { font-size: 12px; min-height: 50px; }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

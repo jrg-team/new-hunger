@@ -1,0 +1,32 @@
+@import "../common/base";
+@mixin h1(){ font-size: 36px; color: #2b4576;  font-weight: 500; }
+section.get-something-wrapper { @include linear-gradient-white-to-blue();
+  > .container{ padding-top: 100px; padding-bottom: 80px;
+    > h1 { @include h1(); text-align: center; margin-bottom: 36px; }
+    > h2 { font-family: $font-medium; font-size:20px; color:#1d2b60; text-align:center; }
+    @media (max-width: 499px) {
+      > ul { overflow: auto; justify-content: normal; }
+    }
+    @media (min-width: 500px) {
+      ul{
+        justify-content: center;
+        > li {  width: 360px; }
+      }
+    }
+    > ul{ display: flex; align-items: center; margin-top: 80px;
+      > li { height: 440px; background: #fff;
+        box-shadow:0 0 20px 0 rgba(0,159,245,0.15);
+        border-radius:32px; margin: 0 20px; padding: 40px 0 30px 0;
+        > img {width: 216px; height: 195px; margin: auto; display: flex; margin-bottom: 17px;}
+        > .experience { padding: 17px 38px;
+          > h4 { font-family:$font-medium; font-size:14px;
+            color: $gray; margin-bottom: 8px; }
+          > .strip { height: 10px; background: $white-blue; width: 270px; border-radius:5px;
+            position: relative; overflow: hidden;
+            > span { background: #53b6eb; position: absolute; height: 100%; width: 50px;}
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>饥人谷-前端课程</title>
+  <meta name="keyword" content="前端培训, Java培训, 算法培训, 靠谱的前端培训, 好的前端培训, 饥人谷, 前端培训机构, 专业的前端培训, 前端, Java, Node.js, HTML5">
+  <meta name="description" content="饥人谷，培训前端工程师、Java工程师、算法工程师，老师来自百度、腾讯、阿里、亚马逊、网易等一线互联网公司">
+  <meta name="viewport" charset="UTF-8" content="user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+  <link rel="stylesheet" href="./src/css/pages/fe-course-list.scss">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="menu">
+        <a href="/" class="logo"><img src="./src/assets/images/logo2.png" alt="饥人谷"></a>
+        <div class="nav">
+          <a class="active" href="fe.html">前端培训计划</a>
+          <a href="java.html">Java培训计划</a>
+        </div>
+        <div class="menu-right">
+          <a href="https://static.meiqia.com/dist/standalone.html?_=t&eid=61296" target="_blank" class="btn-style1">咨询课程</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="curriculum-wrapper" id="app">
+    <main class="curriculum container">
+      <h1 style="font-size:56px;">前端系统班课表</h1>
+      <div class="content">
+        <ul>
+          <li v-for="(item,index) in leftColumn">
+            <div class="title">
+              <div class="icon">
+                <span class="x"></span>
+              </div>
+              <div class="description">
+                <p class="name">{{index+1}}. {{item.title}}</p>
+                <p>{{item.description}}</p>
+              </div>
+            </div>
+            <div class="drop-down">
+              <div class="drop-down-content">
+                <p v-for="chapter in item.chapters">{{chapter}}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li v-for="(item,index) in rightColumn">
+            <div class="title">
+              <div class="icon">
+                <span class="x"></span>
+              </div>
+              <div class="description">
+                <p class="name">{{index+leftColumn.length+1}}. {{item.title}}</p>
+                <p>{{item.description}}</p>
+              </div>
+            </div>
+            <div class="drop-down">
+              <div class="drop-down-content">
+                <p v-for="chapter in item.chapters">{{chapter}}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </section>
+  <script src="./src/js/pages/fe-course-list.js"></script>
+</body>
+</html>

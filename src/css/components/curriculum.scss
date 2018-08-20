@@ -1,0 +1,165 @@
+section.curriculum-wrapper{
+  background:linear-gradient(90deg, #f9fcff 0%, #ebf7ff 100%);
+  padding-top: 100px; padding-bottom: 53px;
+  li{
+    margin-bottom: 20px;
+    .title{
+      display: flex;
+      border-radius: 15px;
+      box-shadow:0 0 6px 0 rgba(0,159,245,0.15);
+      overflow: hidden;
+      .icon{
+        cursor: pointer;
+        display: flex;justify-content: center;align-items: center;
+        background:linear-gradient(43deg, #23d5f1 0%, #009df5 100%);
+        span.x{
+          width: 19px;
+          height: 19px;
+          display: inline-block;
+          position: relative;
+          transition: .3s;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background: #fff;
+            left: 9px;
+            transition: 0.5s;
+          }
+          &:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            left: 0;
+            top: 9px;
+            transition: 0.5s;
+          }
+        }
+      }
+      .description{
+        padding-left: 30px;
+        background: #fff;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p.name{
+          font-size:18px;
+          color:#1d2b60;
+          font-weight: 700;
+          margin-bottom: 15px;
+          line-height: 1.2;
+        }
+        p:last-child{
+          font-size:14px;
+          color:#606e7d;
+        }
+      }
+    }
+    .drop-down{
+      overflow: hidden;
+      max-height: 0px;
+      transition: max-height .3s ease-out;
+    }
+    &.active .drop-down{
+      max-height: 500px;
+      transition: max-height 1s ease-in;
+    }
+    .drop-down-content{
+      margin-left: 99px;
+      border-left: 2px solid #b8d7e9;
+      padding: 0.1px;
+      p{
+        font-size:16px;
+        padding:0 20px;
+        margin: 15px 0;
+        color:#606e7d;
+        position: relative;
+        &:before{
+          content: '';
+          position: absolute;
+          background:#b8d7e9;
+          width:12px;
+          height:12px;
+          border-radius:100%;
+          left: -7px;
+          top: 4px;
+        }
+      }
+    }
+    &:hover .icon{
+      background-image:linear-gradient(44deg, #5a70af 0%, #1e2c61 100%)
+    }
+    &.active{
+      .icon{
+        background-image:linear-gradient(44deg, #5a70af 0%, #1e2c61 100%)
+      }
+      .description{
+        background-image:linear-gradient(44deg, #1e2c61 0%, #5a70af 100%);
+        p{color: #FFFFFF!important;}
+      }
+    }
+  }
+  li.active{
+    span.x{
+      &:before{
+        transform: rotate(-225deg);
+        transition: 0.5s;
+      }
+      &:after{
+        transform: rotate(-225deg);
+        transition: 0.5s;
+      }
+    }
+  }
+  p.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size:14px;
+    color:#009ff5;
+    .iconfont{
+      font-size: 20px;
+      margin-left: 10px;
+    }
+  }
+}
+@media (min-width: 500px){
+  section.curriculum-wrapper{
+    h1{margin-bottom: 40px;}
+    .content{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      ul{width: calc(100%/2 - 20px); margin-bottom:27px;}
+    }
+    li .title{
+      height: 100px;
+      .icon{
+        width: 100px;height: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 499px){
+  section.curriculum-wrapper{
+    h1{margin-bottom: 20px;}
+    li{
+      margin-bottom: 20px;
+      .title{
+        height: 80px;
+        .icon{
+          width: 80px;height: 80px;
+        }
+      }
+      .drop-down-content{
+        margin-left: 79px;
+      }
+    }
+  }
+}
