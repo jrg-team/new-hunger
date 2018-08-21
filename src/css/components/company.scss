@@ -1,3 +1,4 @@
+@import "./common";
 section.company-wrapper{
   background:linear-gradient(90deg, #f9fcff 0%, #ebf7ff 100%);
   padding-top: 70px; padding-bottom: 70px;
@@ -17,13 +18,10 @@ section.company-wrapper{
       margin-top: 40px;
       padding-bottom: 40px;
       position: relative;
-      img{
-        width: 100px;
-        height: 100px;
+      .iconfont{
+        font-size: 100px;
         vertical-align: center;
-      }
-      img.active{
-        display: none;
+        color: #b8d7e9;
       }
       p{
         position: absolute;
@@ -36,11 +34,9 @@ section.company-wrapper{
         color:#009ff5;
       }
       &:hover{
-        img:first-child{
-          display: none;
-        }
-        img.active{
-          display: inline-block;
+        .iconfont {
+          color: $gray-blue;
+          transition: all .3s;
         }
         p{
           display: block;

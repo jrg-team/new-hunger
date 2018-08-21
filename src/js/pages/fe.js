@@ -27,6 +27,30 @@ $(document).ready(function () {
   })
 })
 
+let strips = $('.strip')
+$(document).on('scroll',function(){
+  strips.each((index,node)=>{
+    if(isShow(node)){
+      $(node).find('span').animate({ left: 0 },1000)
+      if(strips.length === index+1){
+        $(document).off('scroll')
+      }
+    }
+  })
+})
+
+function isShow(element){
+  let offsetTop = $(element).offset().top
+  let itemHeight = $(element).outerHeight(true)
+  let scrollTop = $(window).scrollTop()
+  let clientHeight = $(window).height()
+  if(offsetTop < scrollTop + clientHeight && offsetTop + itemHeight > scrollTop) {
+    return true
+  }else{
+    return false
+  }
+}
+
 let studySwiper = {
   spaceBetween: 13,
   autoplay: {
@@ -36,7 +60,8 @@ let studySwiper = {
   pagination: {
     el: '.swiper-pagination',
     clickable: true
-  }
+  },
+  effect : 'fade'
 }
 let commentSwiperPhone = {
   autoplay: {
@@ -54,12 +79,11 @@ $('.curriculum-wrapper').on('click','li',function () {
 $('.qanda-wrapper').on('click','li',function () {
   $(this).toggleClass('active')
 })
-
-$('.contact-wrapper .contact-phone').on('click','li',function () {
+$('.fe-detail .content').on('click','li',function () {
   $(this).toggleClass('active')
 })
 
-$('.book-button > span').on('click',function(){
+$('.contact-wrapper .contact-phone').on('click','li',function () {
   $(this).toggleClass('active')
 })
 
@@ -76,9 +100,7 @@ $('.connection-pc').on('click','li',function () {
   $('.connection-pc li').removeClass('active')
   $(this).toggleClass('active')
 })
-$('section.free_trial_request > .container > .content-wrap > .from-wrap > .submit > span').on('click',function(){
-  $(this).toggleClass('active')
-})
+
 
 let wechat_qrs = $('.wechat_qr')
 let index = Math.floor(wechat_qrs.length * Math.random())

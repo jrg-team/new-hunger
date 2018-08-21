@@ -20,12 +20,16 @@ section.company-details { @include linear-gradient-blue-to-white;
       > .aside { display: flex;
         align-items: center;
         color: #394b78;
-        .back .iconfont{
-          font-size: 16px;
+        .back {
+          .iconfont{
+            font-size: 16px;
+          }
+          &:hover { color: #009ff5; }
         }
         .iconfont{
           margin-left: 50px;
           font-size: 28px;
+          &.jrg-kefu { &:hover { color: #009ff5; } }
         }
       }
     }
@@ -39,7 +43,7 @@ section.company-details { @include linear-gradient-blue-to-white;
           align-items: center; padding: 8px;
           > a { width: 100%; height: 100%; background-image: linear-gradient(-90deg, #23B9F1 0%, #009EF5 100%);
             border-radius: 32px; display: flex; justify-content: center; align-items: center;
-            &.active { background-image: linear-gradient(90deg, #23B9F1 0%, #009EF5 100%); }
+            &:hover { background-image: linear-gradient(90deg, #23B9F1 0%, #009EF5 100%); }
           }
         }
       }
@@ -92,6 +96,7 @@ section.company-details { @include linear-gradient-blue-to-white;
               display: flex; justify-content: center; align-items: center;
               background-image: linear-gradient(-90deg, #23B9F1 0%, #009EF5 100%);
               border-radius: 32px;padding: 10px;
+              &:hover { background-image: linear-gradient(90deg, #23B9F1 0%, #009EF5 100%); }
             }
           }
         }

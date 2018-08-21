@@ -97,28 +97,76 @@
       "description": "JS必知必会",
       "chapters": [
         "浏览器渲染机制",
-        "数据类型、类型转换、表达式、运算符优先级",
-        "基础类型与引用类型",
-        "递归、深浅拷贝、声明前置等",
-        "函数、作用域"
-      ]
-    },
-    {
-      "title": "JavaScript核心进阶",
-      "description": "JS必知必会",
-      "chapters": [
+        "数据类型、基础类型与引用类型、类型转换、表达式、运算符优先级、函数、递归、深浅拷贝、声明前置等",
+        "作用域、作用域链、闭包",
         "同步与异步的概念",
         "事件循环、任务队列概念",
-        "作用域链",
-        "闭包"
+        "ES5数组操作、正则的用法",
+        "DOM操作、事件模型(冒泡、捕获、事件代理、取消默认)",
+        "BOM操作",
+        "Web服务器原理和搭建、 动画的实现、 Ajax、Mock数据、跨域原理和各种实现",
+        "jQuery的使用、jQuery 插件的编写",
+        "Promise 与异步",
+        "实现 Tab、懒加载、瀑布流布局、木桶布局、轮播等效果",
+        "Canvas画板项目实战",
+        "大屏FM 电台项目实战"
       ]
     },
     {
-      "title": "JavaScript核心进阶",
+      "title": "JavaScript修炼",
       "description": "JS必知必会",
       "chapters": [
-        "ES5数组操作",
-        "正则操作"
+        "原型、 原型链、 继承、this 深入讲解",
+        "常见JavaScript设计模式",
+        "组件的封装",
+        "豆瓣 Top排行移动端实战"
+      ]
+    },
+    {
+      "title": "模块化与工程化",
+      "description": "JS必知必会",
+      "chapters": [
+        "AMD/CMD/CommonJS规范",
+        "Require.js 使用",
+        "Webpack、Parcel.js使用",
+        "Node/ NPM使用",
+        "Less/Sass/Postcss"
+      ]
+    },
+    {
+      "title": "前端综合",
+      "description": "综合知识",
+      "chapters": [
+        "Flex/Grid 布局",
+        "移动端适配",
+        "HTTP讲解",
+        "常见代码优化手段",
+        "Web安全机制"
+      ]
+    },
+    {
+      "title": "酷炫效果",
+      "description": "酷炫效果",
+      "chapters": [
+        "CSS3渐变、过渡、形变、动画、3D 特效实战"
+      ]
+    },
+    {
+      "title": "造轮子",
+      "description": "高级知识",
+      "chapters": [
+        "使用原生 JS 实现日历组件、轮播组件、懒加载组件等",
+        "实现各种 jQuery 插件",
+        "造一个简单的jQuery",
+        "造一个简单的 Vue",
+        "造一个简单 Express"
+      ]
+    },
+    {
+      "title": "算法",
+      "description": "算法",
+      "chapters": [
+        "常见排序算法"
       ]
     },
     {

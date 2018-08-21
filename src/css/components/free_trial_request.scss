@@ -24,7 +24,7 @@ section.free_trial_request { background-image: url("../../assets/images/free_tri
           margin: auto;
           > span { display: flex; width: 100%; height: 100%; background-image: linear-gradient(-90deg, #23B9F1 0%, #009EF5 100%);
             border-radius: 32px; display: flex; justify-content: center; align-items: center;
-            &.active { background-image: linear-gradient(90deg, #23B9F1 0%, #009EF5 100%); }
+            &:hover { background-image: linear-gradient(90deg, #23B9F1 0%, #009EF5 100%); }
           }
         }
       }
